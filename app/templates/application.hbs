@@ -1,0 +1,37 @@
+
+<!--<h1> Mapped</h1>-->
+<html>
+
+    <div class="container-fluid">
+
+
+    <!--Logo-->
+    <div class="logo">
+        {{#link-to 'index'}}
+        <h1 id="maintitle">
+            worldly
+        </h1>
+        {{/link-to}}
+    </div>
+
+
+
+    <!--Navigation Bar-->
+    <div class="menu">
+
+        {{#link-to 'home' class="navlink"}} home &nbsp;{{/link-to}}
+
+        {{#link-to 'map' class="navlink"}} map &nbsp;{{/link-to}}
+
+        {{#link-to 'digest' class="navlink"}} digest {{/link-to}}
+
+    </div>
+</div>
+
+<br>
+<div class="body">
+    {{outlet}}
+</div>
+
+
+</html>

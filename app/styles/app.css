@@ -1,0 +1,308 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+#maintitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/*NAVBAR*/
+
+.menu {
+    float: right;
+    clear: right;
+    margin-right: 40px;
+    font-size: 14pt;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.navlink {
+    color: #455a64;
+    font-weight: 600;
+}
+
+.navlink:hover {
+    color: #b0bec5;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    clear: left;
+    overflow: auto;
+    margin-left: 20px;
+}
+
+.logo h1 {
+    font-size: 18pt;
+    color: black;
+}
+
+html {
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 100px;
+}
+
+.body {
+    float: none;
+    margin-left: 40px;
+    margin-right: 60px;
+        /*background-color: pink;*/
+}
+
+
+/*HOME*/
+
+.homesection {
+    font-size: 130pt;
+    color: #eceff1;
+    font-weight: 600;
+    /*    background-color:pink;*/
+    line-height: 1;
+}
+
+.homesubsection {
+    font-size: 60pt;
+    position: relative;
+    top: -80px;
+    left: 100px;
+    color: #263238;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: -60px;
+}
+
+.homecard .card {
+    border-radius: 10px;
+    margin-bottom: 10%;
+    /*background-color: pink;*/
+    /*display: inline-block;*/
+}
+
+
+.homecard .card .card-block h4 {
+    font-weight: 600;
+    color: #424242;
+    font-size: 18pt;
+    font-family: 'Playfair Display', serif;
+}
+
+.homecard .card .card-block p {
+    color: #757575;
+    font-size: 8pt;
+}
+
+.homecard .card .card-block h4:hover {
+    color: #b0bec5;
+}
+
+.homecard .card .card-block a:hover {
+    text-decoration: none;
+}
+
+.homecard .card .card-block h6 {
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #cfd8dc;
+    word-wrap: break-word;
+}
+
+.heartright {
+    float: right;
+    margin-top: -20px;
+    margin-right: -15px;
+    color: #b0bec5;
+    font-weight: bold;
+}
+
+.adddigest {
+    text-align: center;
+    display: block;
+    color: #b0bec5;
+    vertical-align: bottom;
+    height: 30px;
+    /*    background-color: pink;*/
+    padding-top: 10px;
+    bottom: 0;
+    margin-bottom: 3%;
+    /*padding-bottom: 30px;*/
+
+}
+
+.noborder {
+    border: none;
+}
+
+/*.row-fluid{
+     white-space: nowrap;
+}
+.row-fluid .col-lg-3{
+     display: inline-block;
+}*/
+
+
+
+/*DIGEST */
+
+.digestdate {
+    font-size: 130pt;
+    color: #eceff1;
+    font-weight: 600;
+    position: fixed;
+    top: 100px;
+    z-index: -1;
+    line-height: 1;
+}
+
+.digestadddigest {
+    float: right;
+    color: #b0bec5;
+    font-weight: bold;
+}
+
+.digestarticle {
+    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.digestarticle h4 {
+    font-weight: 600;
+    color: #424242;
+    font-size: 50pt;
+    font-family: 'Playfair Display', serif;
+}
+
+.digestarticle p {
+    color: #757575;
+    font-size: 20pt;
+    font-weight: 100;
+}
+
+.digestarticle h4:hover {
+    color: #b0bec5;
+}
+
+.digestarticle a:hover {
+    text-decoration: none;
+}
+
+.digestarticle h6 {
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #bdbdbd;
+}
+
+.digestarticle .digestsection {
+    color: #9e9e9e;
+    font-weight: 600;
+}
+
+.digestarticle .readmore {
+    color: #9e9e9e;
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    border: 1px solid #9e9e9e;
+}
+
+.digestarticle .readmore:hover {
+    background-color: #eceff1;
+    color: #9e9e9e;
+    border: 1px solid #9e9e9e;
+}
+
+
+/*MAP*/
+
+.mapbackground {
+    width: 100%;
+/*    height: 100%;*/
+    margin:0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    z-index:-2;
+}
+
+
+
+
+
+.mapcard .card .card-block h4 {
+    font-weight: 600;
+    color: #424242;
+    font-size: 14pt;
+    font-family: 'Playfair Display', serif;
+}
+
+.mapcard .card .card-block h4:hover {
+    color: #b0bec5;
+}
+
+.mapcard .card .card-block a:hover {
+    text-decoration: none;
+}
+
+.mapcard .card .card-block h6 {
+    font-size: 9pt;
+    line-height: 1.5;
+    color: #cfd8dc;
+}
+
+.mapcard .heartright {
+    float: right;
+    color: #b0bec5;
+    font-weight: bold;
+}
+
+.mapcard .adddigest {
+    text-align: center;
+    display: block;
+    color: #b0bec5;
+    vertical-align: bottom;
+    height: 30px;
+    /*    background-color: pink;*/
+    padding-top: 10px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.noborder {
+    border: none;
+}
+
+.mapcard .card {
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    background-color: #fafafa;
+}
+
+.ember-cli-g-map {
+  width: 1000px;
+  height: 800px;
+  margin:0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  z-index:-2;
+  width: 100%;
+  height: 100%;
+}
+
+/*.g-map{
+  height: 100%;
+}
+.g-map-canvas {
+  width: 100%;
+  height: 100%;
+}*/

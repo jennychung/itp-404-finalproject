@@ -1,0 +1,24 @@
+<br> <br> <br> <br> <br>
+
+
+<div class="digestdate"> {{format-date article.published_date}} </div>
+
+<div class="digestarticle">
+<i class="fa fa-file-text-o fa-lg digestadddigest"></i>
+
+<h6 class="digestsection"> {{article.section}} | {{article.subsection}}  </h6>
+
+
+<a href="">
+    <h4 class="nounderline">{{article.title}} </h4>
+</a> <br>
+<h6> <i> byline </i> date </h6>
+<h6><i class="fa fa-globe"> {{article.geo_facet.firstObject}} </i> </h6>
+    <br>
+<p>Abstract: {{article.abstract}}</p>
+
+<button type="button" class="btn btn-outline-secondary readmore">+ read more</button>
+</div>
+
+
+{{outlet}} -->

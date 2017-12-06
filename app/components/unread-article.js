@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import $ from 'jquery';
+import config from 'worldly/config/environment'
 
 export default Ember.Component.extend({
 

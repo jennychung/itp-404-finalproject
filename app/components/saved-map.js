@@ -2,12 +2,26 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     isFavorited: true,
-    // favorited: true,
     favorites: Ember.inject.service(),
-    // isFavorited: Ember.computed('model', 'favorites.data', function(){
-    //   return this.get('favorites.data').includes(this.get('model'));
-    // }),
 
+    didRender(){
+      var url = "https://api.nytimes.com/svc/semantic/v2/concept/name/nytd_geo/";
+url += $.param({
+  searchQuery
+});
+url += '.json?' + $.param({
+  'api-key': "277a4620baa94a2d80815b7ad520b6b3",
+  'fields': "article_list"
+});
+$.ajax({
+  url: url,
+  method: 'GET',
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
+    },
 
      actions: {
 
@@ -42,10 +56,8 @@ export default Ember.Component.extend({
 
 
               }
-                // console.log(newIsFavoritedValue);
+
             }
         }
-    // isFavorited: Ember.computed('model', 'favorites.data', function(){
-    //   return this.get('favorites.data').includes(this.get('model'));
-    // })
+
 });

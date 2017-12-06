@@ -218,6 +218,22 @@ html {
     border: 1px solid #9e9e9e;
 }
 
+#empty{
+  font-size: 60pt;
+  color: rgba(0,0,0,0.2);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Playfair Display', serif;
+}
+
+#emptysubtitle{
+  font-size: 18pt;
+  color: rgba(0,0,0,0.2);
+  text-align: center;
+
+}
+
 
 /*MAP*/
 

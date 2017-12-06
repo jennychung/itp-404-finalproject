@@ -48,6 +48,8 @@ ENV.contentSecurityPolicy = {
 };
 
   if (environment === 'development') {
+    ENV.apiHost = 'http://localhost:3000/api/articles';
+
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -67,6 +69,7 @@ ENV.contentSecurityPolicy = {
   }
 
   if (environment === 'production') {
+    ENV.apiHost='';
 
   }
 

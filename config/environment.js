@@ -48,8 +48,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.apiHost = 'http://localhost:3000/api/articles';
+    ENV.apiHost = 'https://worldly-api.herokuapp.com/api/articles/';
 
+// http:localhost:3000/api/articles
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -69,7 +70,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = '';
+    ENV.apiHost = 'https://worldly-api.herokuapp.com/api/articles/';
 
   }
 

@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import $ from 'jquery';
+import config from 'worldly/config/environment';
 
 export default Ember.Component.extend({
 
@@ -8,7 +9,7 @@ export default Ember.Component.extend({
 
     $.ajax({
       context: this,
-      url: "http://localhost:3000/api/articles",
+    url: config.apiHost,
       method: 'GET',
     }).done((article) => {
       Ember.set(this, "article", article);

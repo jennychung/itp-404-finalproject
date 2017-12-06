@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from 'worldly/config/environment';
 
 export default Ember.Component.extend({
   isFavorited: true,
@@ -11,7 +12,7 @@ export default Ember.Component.extend({
       this.set('isFavorited', newIsFavoritedValue);
       if (newIsFavoritedValue == true) {
         $.ajax({
-          url: "http://localhost:3000/api/articles",
+            url: config.apiHost,
           method: 'POST',
           contentType: "application/json; charset=utf-8",
           dataType: "json",
@@ -23,12 +24,12 @@ export default Ember.Component.extend({
       } else {
 
         $.ajax({
-          url: "http://localhost:3000/api/articles",
+            url: config.apiHost,
           method: 'GET',
           success(res) {
             var id = res.filter((art) => art.url == Ember.get('article', 'url'))[0].id;
             $.ajax({
-              url: "http://localhost:3000/api/articles/" + id,
+              url: config.apiHost +  id,
               method: 'DELETE'
             });
 

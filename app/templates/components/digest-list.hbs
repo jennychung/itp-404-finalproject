@@ -1,18 +1,18 @@
 {{#if article}}
 
-<br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br>
 
-<div class="digestdate"> {{short-format-date}} </div>
+  <div class="digestdate"> {{short-format-date}} </div>
 
-{{#each article as |article|}}
+  {{#each article as |article|}}
 
-{{saved-digest article=article}}
+    {{saved-digest article=article}}
 
-{{/each}}
+  {{/each}}
 
 {{else}}
-<div id="empty"> you're all caught up! </div>
-<div id="emptysubtitle"> favorite an article to add to list </div>
+  <div id="empty"> you're all caught up! </div>
+  <div id="emptysubtitle"> favorite an article to add to list </div>
 
 
 {{/if}}

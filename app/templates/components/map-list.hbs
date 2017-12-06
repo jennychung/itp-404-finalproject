@@ -1,17 +1,16 @@
 {{#if article}}
 
-{{#each article as |article|}}
-<div class="col-12 col-sm-10 col-md-6 col-lg-3">
-<div class="mapcard card-deck">
+  {{#each article as |article|}}
+    <div class="col-12 col-sm-10 col-md-6 col-lg-3">
+      <div class="mapcard card-deck">
 
-{{saved-map article=article}}
-</div>
-</div>
-{{/each}}
+        {{saved-map article=article}}
+      </div>
+    </div>
+  {{/each}}
 
 {{else}}
-<!-- <div id="empty"> you're all caught up! </div> <br>-->
-<div id="emptysubtitle" style="text-align: left!important;"> favorite an article to add to map </div>
+  <div id="emptysubtitle" style="text-align: left!important;"> favorite an article to add to map </div>
 
 
 {{/if}}

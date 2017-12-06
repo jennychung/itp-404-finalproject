@@ -27,25 +27,25 @@ module.exports = function(environment) {
     // }
   };
 
-//   ENV['g-map'] = {
-//   libraries: ['visualization'],
-//   key: 'AIzaSyDN93fLIMRdI8tujaHyla7XnNYiZluZfAk'
-// }
+  //   ENV['g-map'] = {
+  //   libraries: ['visualization'],
+  //   key: 'AIzaSyDN93fLIMRdI8tujaHyla7XnNYiZluZfAk'
+  // }
 
-ENV.googleMap = {
-   libraries: ['drawing', 'visualization'],
-  apiKey: 'AIzaSyDN93fLIMRdI8tujaHyla7XnNYiZluZfAk'
-}
+  ENV.googleMap = {
+    libraries: ['drawing', 'visualization'],
+    apiKey: 'AIzaSyDN93fLIMRdI8tujaHyla7XnNYiZluZfAk'
+  }
 
 
-ENV.contentSecurityPolicy = {
-  'default-src': "'none'",
-  'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
-  'font-src': "'self' fonts.gstatic.com",
-  'connect-src': "'self' maps.gstatic.com",
-  'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
-  'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
-};
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+    'font-src': "'self' fonts.gstatic.com",
+    'connect-src': "'self' maps.gstatic.com",
+    'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+    'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+  };
 
   if (environment === 'development') {
     ENV.apiHost = 'http://localhost:3000/api/articles';
@@ -69,7 +69,7 @@ ENV.contentSecurityPolicy = {
   }
 
   if (environment === 'production') {
-    ENV.apiHost='';
+    ENV.apiHost = '';
 
   }
 

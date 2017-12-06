@@ -1,4 +1,6 @@
-import { test } from 'qunit';
+import {
+  test
+} from 'qunit';
 import moduleForAcceptance from 'worldly/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | digest route');

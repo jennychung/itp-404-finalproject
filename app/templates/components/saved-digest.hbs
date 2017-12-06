@@ -3,21 +3,21 @@
 <div class="digestdate"> {{short-format-date article.article.published_date}} </div> -->
 
 <div class="digestarticle">
-<!-- <i class="fa fa-file-text-o fa-lg digestadddigest"></i> -->
+  <!-- <i class="fa fa-file-text-o fa-lg digestadddigest"></i> -->
 
-{{favorite-button favorited=isFavorited onclick=(action "favorite")}}
+  {{favorite-button favorited=isFavorited onclick=(action "favorite")}}
 
-<h6 class="digestsection"> {{article.article.section}} | {{article.article.subsection}}  </h6>
+  <h6 class="digestsection"> {{article.article.section}} | {{article.article.subsection}}  </h6>
 
-<a href="{{article.article.url}}">
+  <a href="{{article.article.url}}">
     <h4 class="nounderline">{{article.article.title}} </h4>
-</a> <br>
-<h6> <i> {{article.article.byline}} </i> {{article.article.date}} </h6>
-<h6><i class="fa fa-globe"> {{article.article.geo_facet.firstObject}} </i> </h6>
-    <br>
-<p>Abstract: {{article.article.abstract}}</p>
+  </a> <br>
+  <h6> <i> {{article.article.byline}} </i> {{article.article.date}} </h6>
+  <h6><i class="fa fa-globe"> {{article.article.geo_facet.firstObject}} </i> </h6>
+  <br>
+  <p>Abstract: {{article.article.abstract}}</p>
 
-<a href="{{article.article.url}}">
+  <a href="{{article.article.url}}">
 
 <button type="button" class="btn btn-outline-secondary readmore">+ read more</button> </a>
 </div>
